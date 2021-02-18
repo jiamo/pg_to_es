@@ -1,0 +1,13 @@
+# To update requirements, edit this file and run commands
+# pip install pip-tools
+# pip-compile -v
+
+psql-replication >= 0.0.6
+redis
+aiocache
+aioredis
+pytz
+elasticsearch
+iso8601
+pyyaml
+fluent-logger

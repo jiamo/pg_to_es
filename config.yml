@@ -1,0 +1,21 @@
+default:
+    ES_URL: es.local
+    ES_PORT: 9200
+    FLUENTD_HOST: 127.0.0.1
+    FLUENTD_PORT: 24224
+    ES_PORT_AWS: 80
+    PGDB_PORT: 5432
+develop:
+    STAGE: develop
+    inherit: default
+    ES_URL: 127.0.0.1:9200
+    ES_PORT: 9200
+    PGDB_DATABASE: postgres
+    PGDB_HOST: 127.0.0.1
+    PGDB_USER: jiamo
+    PGDB_PASSWORD: postgres
+    PGDB_SLAVE_HOST: 127.0.0.1
+    REDIS_URL: 127.0.0.1:6379
+    SLOT_NAME: pytest
+    REDIS_URL_SLAVE:
+      - 127.0.0.1:6379
